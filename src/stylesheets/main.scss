@@ -120,7 +120,7 @@ h3 {
 // BUTTONS
 
 button:hover {
-    color: white !important;
+    color: $dark !important;
     font-weight: bold;
     }
     
@@ -152,6 +152,16 @@ button:hover {
 .card-3:hover, .card-5:hover {
     background-color: $success;
     color: $slate;
+}
+
+//LINKS
+a.chat:hover {
+  color: $dark;
+  font-weight: bold;
+}
+
+#home a.chat:hover {
+    color: white;
 }
 
 
@@ -256,6 +266,13 @@ button:hover {
     #home h1 span.mono {
         font-size: 7rem;
     }
+
+    #home a.chat {
+        width: 300px;
+        margin: auto;
+    }
+
+    
 }
 
 @media screen and (min-width: 1560px) {
@@ -382,14 +399,6 @@ blockquote {
 
 }
 
-// ARROWS
-
-.arrow-outline:hover {
-    background-color: #13FFCB;
-}
-.arrow-fill:hover {
-    display: none;
-}
 
 
 
