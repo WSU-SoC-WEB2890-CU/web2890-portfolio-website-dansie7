@@ -1,3 +1,407 @@
 /* Your styles go here */
+
+/* THEME COLORS */
+$mint:    #13FFCB;
+$aqua:    #0BFFEC;
+$lime:    #DBFF00;
+$pink:    #FF00D8;
+$slate:   #292E32;
+
+$primary:       $mint;
+$secondary:     $lime;
+$success:       $aqua;
+$info:          $pink;
+$dark:          $slate;
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+@font-face {
+    font-family: assistant-extra-bold;
+    src: url(../fonts/Assistant-ExtraBold.ttf);
+    font-family: assistant-bold;
+    src: url(../fonts/Assistant-Bold.ttf);
+    font-family: assistant-light;
+    src: url(../fonts/Assistant-Light.ttf);
+    font-family: assistant-regular;
+    src: url(../fonts/Assistant-Regular.ttf);
+    font-family: assistant-semi-bold;
+    src: url(../fonts/Assistant-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'mono-display';
+    src: url(../fonts/MajorMonoDisplay-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'manrope-bold';
+    src: url('../fonts/Manrope-Bold.ttf');
+    font-family: 'manrope-extra-bold';
+    src: url('../fonts/Manrope-ExtraBold.ttf');
+    font-family: 'manrope-regular';
+    src: url('../fonts/Manrope-Regular.ttf');
+    font-family: 'manrope-semi-bold';
+    src: url('../fonts/Manrope-SemiBold.ttf');
+    font-family: 'manrope-light';
+    src: url('../fonts/Manrope-Light.ttf');
+}
+
+@font-face {
+    font-family: 'ranchers';
+    src: url(../fonts/Ranchers-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'climate-crisis';
+    src: url(../fonts/ClimateCrisis-Regular.ttf);
+}
+
+// BODY STYLES
+p {
+    font-family: assistant-regular, ariel, sans-serif;
+}
+
+.xlarge {
+    font-size: 5rem;
+}
+
+.card-number {
+    font-size: 3rem;
+    font-family: mono-display, ariel, sans-serif;
+    font-weight: 900;
+}
+
+.thick {
+    font-family: manrope-extra-bold, ariel, sans-serif;
+}
+
+// HEADINGS
+
+h3 {
+    font-family: manrope-bold, ariel, sans-serif;
+}
+
+.subheading {
+    color: $primary;
+    font-weight: bolder;
+    border-top: 1px solid $secondary;
+    border-bottom: 1px solid $secondary;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+// ICONS
+
+.bi {
+    font-size: 3rem;
+    color: $primary;
+}
+
+.material-symbols-outlined {
+    font-size: 4rem;
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48,
+    }
+
+// IMAGES
+.profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+// BUTTONS
+
+button:hover {
+    color: white !important;
+    font-weight: bold;
+    }
+    
+
+// CARDS
+
+.card {
+    position: relative;
+}
+
+.card-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+}
+
+.card-1:hover, .card-6:hover {
+    background-color: $primary;
+    color: $slate;
+}
+
+.card-2:hover, .card-4:hover {
+    background-color: $secondary;
+    color: $slate;
+}
+
+.card-3:hover, .card-5:hover {
+    background-color: $success;
+    color: $slate;
+}
+
+
+
+
+// NAVBAR
+
+
+.navbar {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-brand.mono {
+    font-family: mono-display, impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5rem;
+}
+
+// HOME STYLES
+#home .banner-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+}
+
+#home img {
+    transform: scale(1.5);
+    position: absolute;
+    top: -20%;
+    left: 20%;
+}
+
+#home h1 {
+    font-family: climate-crisis, ariel;
+    font-size: 5rem;
+    color: #FCF9E9;
+    position: absolute;
+    top: 30%;
+    line-height: 4.3rem;
+    letter-spacing: 8px;
+}
+
+#home h1 span.mono {
+    font-family: mono-display, impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 5.6rem;
+    letter-spacing: 1px;
+    color: #FCF9E9;
+}
+
+#home h2 {
+ font-family: assistant-semi-bold, ariel, sans-serif;
+ font-size: 4rem;
+ margin-top: -90px !important;
+}
+
+#home .unhide {
+    display: none;
+}
+
+@media screen and (min-width: 506px) {  
+    #home .banner-container {
+        height: 300px;
+    }
+    
+    #home img {
+        top: -10%;
+        left: 7%;
+    }
+    
+    #home h2 {
+     font-size: 3rem;
+     margin-top: 2rem !important;
+     text-align: center;
+    }
+
+    #home .unhide {
+        display: block;
+    }
+
+    #home .hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    #home .banner-container {
+        height: 400px;
+    }
+
+    #home img {
+        top: -40%;
+        left: 7%;
+    }
+
+    #home h1 {
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+    
+    #home h1 span.mono {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (min-width: 1560px) {
+    #home .banner-container {
+        height: 500px;
+    }
+
+    #home img {
+        top: -60%;
+        left: 7%;
+    }
+
+    #home h1 {
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+    
+    #home h1 span.mono {
+        font-size: 7rem;
+    }
+}
+
+// FORM
+.form-control {
+border: 3px solid $primary;
+border-radius: 8px;
+}
+
+// FOOTER
+footer {
+background-color: black;    
+}
+
+// PROJECT STYLING
+.project-title {
+    color: $primary;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0px;
+}
+
+blockquote {
+    font-family: climate-crisis, ariel;
+    color: $info;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.color-block1 {
+ background-color: #EDEBEB;
+ width: 100px;
+ height: 100px;
+}
+
+.color-block2 {
+    background-color: #69501E;
+    width: 100px;
+    height: 100px;
+}
+
+.color-block3 {
+    background-color: #D8D5CC;
+    width: 100px;
+    height: 100px;
+}
+
+.color-block4 {
+    background-color: #0F0706;
+    width: 100px;
+    height: 100px;
+}
+
+// CONTACT STYLING
+
+#contact .banner-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+}
+
+#contact .banner {
+    transform: scale(1.5);
+    position: absolute;
+    top: 50%;
+
+}
+
+@media screen and (min-width: 506px) {  
+    #contact .banner-container {
+        height: 300px;
+    }
+    
+    #contact .banner {
+        transform: scale(1.3);
+        top: 40%;
+
+    }
+    
+}
+
+@media screen and (min-width: 930px) {
+    #contact .banner-container {
+        height: 400px;
+    }
+
+    #contact .banner {
+        transform: scale(1.2);
+        top: 20%;
+        left: 5%
+    }
+}
+
+@media screen and (min-width: 1560px) {
+    #contact .banner-container {
+        height: 500px;
+    }
+
+    #contact .banner {
+        transform: scale(1.1);
+        top: 10%;
+    }
+
+}
+
+// ARROWS
+
+.arrow-outline:hover {
+    background-color: #13FFCB;
+}
+.arrow-fill:hover {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
