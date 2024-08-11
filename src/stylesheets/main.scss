@@ -152,10 +152,10 @@ h3 {
 }
 
 .subheading {
-    color: $primary;
+    color: $dark;
     font-weight: bolder;
-    border-top: 1px solid $secondary;
-    border-bottom: 1px solid $secondary;
+    border-top: 2px solid $secondary;
+    border-bottom: 2px solid $secondary;
     width: 100%;
     text-align: center;
     padding-top: 1rem;
@@ -347,6 +347,7 @@ a.chat.cta-button:hover {
     }
 }
 
+
 // PAGE - PORTFOLIO STYLING
 
 .project-title {
@@ -425,6 +426,40 @@ blockquote {
     position: fixed;
     top: 20%;
     color: $dark;
+}
+
+.rps-container {
+    position: relative;
+}
+
+.play-text-container {
+    background-color: $secondary;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    position: absolute;
+    opacity: 0;
+}
+
+.play-text-container:hover {
+    opacity: 1;
+}
+
+.play-text, .bi-tv {
+    font-size: 3rem;
+    color: $dark;
+}
+
+.play-text:hover {
+    opacity: 1;
+
+}
+
+
+ 
+.finding-container {
+    border-radius: 3px;
 }
 
 // PAGE - CONTACT STYLING
