@@ -14,189 +14,64 @@
 </head>
 
 <body>
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-body-slate navbar-dark bg-dark sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand mono" href="./index.html">D</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">about</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contact.html">contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- INTRO -->
-<section class=" m-0 p-0" id="home">
-  <div class="row container-fluid banner-container">
-    <img src="images/leopard.png" alt="leopard design" class="img-fluid banner">
-    <h1 class="text-center"><span class="mono">D</span>ANSIE<br/><span class="mono">D</span>ESIGN</h1>
-  </div>
-
-  <div class="row">
-    <h2 class="lead w-75 m-auto hide">UI<br/>that gets<br/>you<br/> noticed.</h2>
-    <h2 class="lead w-75 m-auto unhide">UI that gets you noticed.</h2>
-    <div class="d-grid col-8 col-md-4 col-lg-4 mx-auto mt-4">
-      <a class="btn btn-outline-primary btn-lg border-2 fs-3 chat" href="./contact.html">Get Started</a>
-    </div>
-  
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="m-0 mt-5 p-0 bg-dark text-light pt-5 pb-5" id="about">
-<h2 class="text-center fs-1"><span class="xlarge">HELLO</span><br/>I'm <span class="text-primary">Dansie</span></h2>
-<p class="text-center lead">FullStack | Front-End | Designer</p>
-
-<div class="row d-grid pt-5 pb-5">
-  <div class="col-6 col-md-4 mx-auto d-flex justify-content-between text-center">
-    <h3>CSS<br/><i class="bi bi-check2-circle"></i></h3>
-    <h3>HTML<br/><i class="bi bi-check2-circle"></i></h3>
-    <h3>JS<br/><i class="bi bi-check2-circle"></i></h3>
-  </div>
-  <div class="col-6 col-md-4  mx-auto d-flex justify-content-around pt-4 text-center">
-    <h3>Ps<br/><i class="bi bi-check2-circle"></i></h3>
-    <h3>Xd<br/><i class="bi bi-check2-circle"></i></h3>
-  </div>
-</div>
-
-<div class="row d-grid text-center">
-  <div class="col-8 col-md-4 mx-auto">
-    <p>Designing & developing professional<br/> 
-      websites is what I do.<br/>  
-      I don't do boring.<br/><br/>
-      
-      Outside of the world of web,<br/> I spend time - 
-      well I'll let you guess...</p>
-  </div>
-  <div class="col-8 col-md-4 col-lg-2 mx-auto d-flex justify-content-between mt-4">
-    <span class="material-symbols-outlined">ac_unit</span>
-    <span class="material-symbols-outlined">landscape</span>
-    <span class="material-symbols-outlined">photo_camera</span>
-  </div>
-</div>
-</section>
-
-
-<!-- PORTFOLIO -->
-<section class="m-0 mt-5 p-0 pt-5 pb-2 row" id="portfolio">
-<h2 class="text-center fs-1">PORTFOLIO<br/><span class="material-symbols-outlined">arrow_downward</span></h2>
-<div class="row col-md-10 mx-auto row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 mb-md-5 ps-md-2 pe-md-2">
-  <div class="col"><a href="./project-1.html">
-    <div class="card">
-      <img src="./images/no1-photarity.JPG" alt="beach landscape" class="card-img-top">
-      <div class="card-body card-1 d-flex flex-column justify-content-center align-items-center">
-        <h3 class="card_title card-number">N<span class="thick">O1</span></h3>
-        <h4 class="card-text">Photarity</h4>
-        <p class="card-text">UX Case Study</p>
+  <div class="main-content">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-slate navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand mono" href="./index.html">D</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">about</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">portfolio</a>
+              <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
+                <li><a href="./project-1.html" class="dropdown-item">No1</a></li>
+                <li><a href="./project-2.html" class="dropdown-item">No2</a></li>
+                <li><a href="./project-3.html" class="dropdown-item">No3</a></li>
+                <li><a href="./project-4.html" class="dropdown-item">No4</a></li>
+                <li><a href="./project-5.html" class="dropdown-item">No5</a></li>
+                <li><a href="./project-6.html" class="dropdown-item">No6</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div></a>
-  </div>
+    </nav>
 
-  <div class="col"><a href="./project-2.html">
-    <div class="card">
-      <img src="./images/no2-fitmosphere.JPG" alt="weights" class="card-img-top">
-      <div class="card-body card-2 d-flex flex-column justify-content-center align-items-center">
-        <h3 class="card_title card-number">N<span class="thick">O2</span></h3>
-        <h4 class="card-text">Fitmosphere</h4>
-        <p class="card-text">HTML | CSS | Figma | Bootstrap </p>
-      </div>
-    </div></a>
-  </div>
+    <!-- INTRO -->
+    <section class=" m-0 p-0 pb-4" id="home">
 
-  <div class="col"><a href="./project-3.html">
-    <div class="card">
-      <img src="./images/no3-give.JPG" alt="give website" class="card-img-top">
-      <div class="card-body card-3 d-flex flex-column justify-content-center align-items-center">
-        <h3 class="card_title card-number">N<span class="thick">O3</span></h3>
-        <h4 class="card-text">Give</h4>
-        <p class="card-text">HTML | CSS | Foundation</p>
-      </div>
-    </div></a>
-  </div>
-
-  <div class="col"><a href="./project-4.html">
-    <div class="card">
-      <img src="./images/no4-rps.JPG" alt="rock, paper, scissors" class="card-img-top">
-      <div class="card-body card-4 d-flex flex-column justify-content-center align-items-center">
-        <h3 class="card_title card-number">N<span class="thick">O4</span></h3>
-        <h4 class="card-text">RPS</h4>
-        <p class="card-text">VueJS</p>
-      </div>
-    </div></a>
-  </div>
-
-  <div class="col"><a href="./project-5.html">
-    <div class="card">
-      <img src="./images/no5-car.JPG" alt="car" class="card-img-top">
-      <div class="card-body card-5 d-flex flex-column justify-content-center align-items-center">
-        <h3 class="card_title card-number">N<span class="thick">O5</span></h3>
-        <h4 class="card-text">Car Deal</h4>
-        <p class="card-text">HTML | CSS | Bootstrap</p>
-      </div>
-    </div></a>
-  </div>
-
-  <div class="col"><a href="./project-6.html">
-    <div class="card">
-      <img src="./images/no6-storm.JPG" alt="mountains" class="card-img-top">
-      <div class="card-body card-6 d-flex flex-column justify-content-center align-items-center">
-        <h3 class="card_title card-number">N<span class="thick">O6</span></h3>
-        <h4 class="card-text">Storm</h4>
-        <p class="card-text">HTML | CSS | Bootstrap</p>
-      </div>
-    </div></a>
-  </div>
-</div>
-</section>
-
-<!-- FORM --> 
-<section class="m-0 p-0 pt-5 bg-dark text-light" id="portfolio">
-  <h2 class="text-center fs-1">Ready to take your<br/>
-  Website to another level?<br/>
-LET's CHAT!</h2>
-
-<div class="row mt-5 pb-5">
-  <div class="col-8 col-md-4 mx-auto">
-    <form>
-      <div class="mb-4">
-        <input type="text" class="form-control" id="name" placeholder="Name">
-      </div>
-      <div class="mb-4">
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-        <div id="emailHelp" class="form-text text-light text-center">Your email will not be shared with anyone else.</div>
-      </div>
-      <div class="mb-4">
-        <textarea class="form-control" placeholder="Brief description of project..." id="floatingTextarea" rows="7"></textarea>
+      <div class="row container-fluid banner-container">
+        <img src="images/leopard.png" alt="leopard design" class="img-fluid banner">
+        <h1 class="text-center"><span class="mono">D</span>ANSIE<br/><span class="mono">D</span>ESIGN</h1>
       </div>
 
-      <div class="d-grid col-6 mx-auto">
-        <button type="submit" class="btn btn-outline-primary btn-lg border-2">Submit</button>
+      <div class="row">
+        <h2 class="lead w-75 m-auto hide">UI<br/>that gets<br/>you<br/> noticed.</h2>
+        <h2 class="lead w-75 m-auto unhide">UI that gets you noticed.</h2>
+        <div class="d-grid col-8 col-md-4 col-lg-4 mx-auto mt-4">
+          <a class="btn btn-outline-dark btn-lg border-2 fs-3 chat" href="./about.html">Get Started</a>
+        </div>
       </div>
 
-    </form>
+    </section>
   </div>
-</div>
-</section>
 
-<footer class="pb-1">
-  <p class="text-center text-light pt-3"><small>&copy; 2024 All Rights Reserved.</small></p>
+<footer>
+  <p class="text-center text-light pt-2"><small>&copy; 2024 All Rights Reserved.</small></p>
 </footer>
 
-  <script type="module" src="./javascripts/main.js"></script>
+<script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>

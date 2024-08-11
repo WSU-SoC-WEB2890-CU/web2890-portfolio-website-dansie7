@@ -11,37 +11,46 @@
     <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
 <body>
-   <!-- NAVBAR -->
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-slate navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-        <a class="navbar-brand mono" href="./index.html">D</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand mono" href="./index.html">D</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./index.html">home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./index.html#about">about</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./index.html#portfolio">portfolio</a>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">about</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">portfolio</a>
+                <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
+                  <li><a href="./project-1.html" class="dropdown-item">No1</a></li>
+                  <li><a href="./project-2.html" class="dropdown-item active">No2</a></li>
+                  <li><a href="./project-3.html" class="dropdown-item">No3</a></li>
+                  <li><a href="./project-4.html" class="dropdown-item">No4</a></li>
+                  <li><a href="./project-5.html" class="dropdown-item">No5</a></li>
+                  <li><a href="./project-6.html" class="dropdown-item">No6</a></li>
+              </ul>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="./contact.html">contact</a>
-            </li>
+              </li>
             </ul>
+          </div>
         </div>
-        </div>
-    </nav> 
+    </nav>
 
     <section id="intro">
-        <div class="row container-fluid">
+        <div class="row p-0 m-0 container-fluid">
             <div class="d-flex justify-content-between">
                 <div class="next ps-2 pt-5"><a href="./project-1.html"><i class="bi bi-arrow-left-circle"></i></a></div>
-                <div class="previous pe-2 pt-5"><a href="./project-3.html"><i class="bi bi-arrow-right-circle"></i></a></div>
+                <div class="previous pe-5 pt-5"><a href="./project-3.html"><i class="bi bi-arrow-right-circle"></i></a></div>
             </div>
             <div class="col d-flex flex-column align-items-center">
                 <h1 class="card-number project-title">N<span class="thick">O2</span></h1>
@@ -52,9 +61,9 @@
     </section>
 
     <section id="brief">
-        <div class="row container-fluid">
+        <div class="row p-0 m-0 container-fluid">
             <h2 class="subheading">BRIEF</h2>
-            <div class="col-md-6 col-lg-4 mx-auto d-flex flex-column align-items-center pt-3 pb-3">
+            <div class="col-10 col-md-6 col-lg-4 mx-auto d-flex flex-column align-items-center pt-3 pb-3">
                 
                 <p class="pt-3">Final project for an Advanced CSS course building  a personal website that is centered around fitness and health to motivate positive lifestyles. </p>
                 <p>Utilizing different pages to cover topics on key exercise, healthy eating, inspirational quotes, etc. I explore holistic approaches that can be easily translated across a web platform.</p>
@@ -64,54 +73,52 @@
 
 
     <section id="prototype" class="bg-secondary">
-        <div class="row container-fluid">
-            <div class="col d-flex flex-column align-items-center pt-4"> 
-                <img src="./images/fitmosphere-phone.png" alt="Phoartiy website mobile example" width="300" class="pt-5 pb-5">    
+        <div class="row p-0 m-0 container-fluid">
+            <div class="col-10 mx-auto d-flex flex-column align-items-center pt-4"> 
+                <img src="./images/fitmosphere-phone.png" alt="Phoartiy website mobile example" class="img-fluid pt-3 pb-3 col-10 col-sm-8 col-md-6 col-lg-3 mx-auto">  
             </div>
         </div>
     </section>
 
     <section id="website-screenshots">
-        <div class="row container-fluid">
+        <div class="row p-0 m-0 container-fluid">
             <div class="row row-cols-1 row-cols-md-3 g-2 mb-md-5 ps-md-2 pe-md-2 ps-lg-5 pe-md-5 col-md-10 col-lg-8 mx-auto pt-4">
-                <div class="col-md-6">
+                <div class="col-10 col-md-6 mx-auto">
                     <img src="./images/fitmosphere-ex1.jpg" alt="" class="img-fluid rounded">
                 </div>
               
-                <div class="col-md-6">
+                <div class="col-10 col-md-6 mx-auto">
                     <img src="./images/fitmosphere-ex2.jpg" alt="" class="img-fluid rounded">
                   </div>
               
-                  <div class="col-md-6 pt-md-3">
+                  <div class="col-10 col-md-6 pt-md-3 mx-auto">
                     <img src="./images/fitmosphere-ex3.jpg" alt="" class="img-fluid rounded">
                   </div>
               
-                  <div class="col-md-6 pt-md-3">
+                  <div class="col-10 col-md-6 pt-md-3 mx-auto">
                     <img src="./images/fitmosphere-ex4.jpg" alt="" class="img-fluid rounded">
                   </div>
               </div>
-              <div class="d-flex justify-content-between pb-3">
-                <div class="next ps-2 pt-5"><a href="./project-1.html"><i class="bi bi-arrow-left-circle"></i></a></div>
-                <div class="previous pe-2 pt-5"><a href="./project-3.html"><i class="bi bi-arrow-right-circle"></i></a></div>
-            </div>
+
         </div>
     </section>
 
   
 
-    <section id="cta" class="bg-dark text-light">
-        <div class="row container-fluid pt-3">
+    <!-- CALL TO ACTION --> 
+    <section id="cta" class="bg-dark text-light mt-3">
+        <div class="row p-0 m-0 container-fluid pt-3 cta-content">
             <div class="col d-flex flex-column align-items-center pt-5">  
                 <h2 class="text-center fs-1">Ready to see what<br/>
                     great UI design<br/>
-                  can do for you?</h2>  
+                can do for you?</h2>  
                 <div class="d-grid col-6 col-md-3 col-lg-2 mx-auto mt-4 pb-5">
-                    <a class="btn btn-outline-primary btn-lg border-2 fs-3 chat" href="./contact.html">Let's Chat!</a>
-                </div>
-                
+                    <a class="btn btn-outline-primary btn-lg border-2 fs-3 chat cta-button" href="./contact.html">Let's Chat!</a>
+                </div>  
             </div>
         </div>
     </section>
+
     <footer class="pb-1">
         <p class="text-center text-light pt-3"><small>&copy; 2024 All Rights Reserved.</small></p>
     </footer>

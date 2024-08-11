@@ -2,6 +2,7 @@
 
 /* THEME COLORS */
 $mint:    #13FFCB;
+$blue:    #3E29FF;
 $aqua:    #0BFFEC;
 $lime:    #DBFF00;
 $pink:    #FF00D8;
@@ -57,7 +58,27 @@ $dark:          $slate;
     src: url(../fonts/ClimateCrisis-Regular.ttf);
 }
 
-// BODY STYLES
+// ENTIRE PAGE STYLES
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
 p {
     font-family: assistant-regular, ariel, sans-serif;
 }
@@ -66,14 +87,62 @@ p {
     font-size: 5rem;
 }
 
+
+.thick {
+    font-family: manrope-extra-bold, ariel, sans-serif;
+}
+
+
+// BUTTONS
+
+button:hover {
+    color: $dark !important;
+    }
+
+// CARDS
+
+.card {
+    position: relative;
+}
+
 .card-number {
     font-size: 3rem;
     font-family: mono-display, ariel, sans-serif;
     font-weight: 900;
 }
 
-.thick {
-    font-family: manrope-extra-bold, ariel, sans-serif;
+.card-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+}
+
+.card-1:hover, .card-6:hover {
+    background-color: $primary;
+    color: $slate;
+}
+
+.card-2:hover, .card-4:hover {
+    background-color: $secondary;
+    color: $slate;
+}
+
+.card-3:hover, .card-5:hover {
+    background-color: $success;
+    color: $slate;
+}
+
+// FORM
+.form-control {
+    border: 3px solid $primary;
+    border-radius: 8px;
+    }
+    
+// FOOTER
+footer {
+background-color: black;    
 }
 
 // HEADINGS
@@ -117,55 +186,18 @@ h3 {
     height: 250px;
 }
 
-// BUTTONS
-
-button:hover {
-    color: $dark !important;
-    font-weight: bold;
-    }
     
-
-// CARDS
-
-.card {
-    position: relative;
-}
-
-.card-body {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.6);
-    color: white;
-}
-
-.card-1:hover, .card-6:hover {
-    background-color: $primary;
-    color: $slate;
-}
-
-.card-2:hover, .card-4:hover {
-    background-color: $secondary;
-    color: $slate;
-}
-
-.card-3:hover, .card-5:hover {
-    background-color: $success;
-    color: $slate;
-}
-
 //LINKS
+
 a.chat:hover {
-  color: $dark;
-  font-weight: bold;
+  color: $primary;
+  background-color: black;
+  border: 2px solid $primary;
 }
 
-#home a.chat:hover {
-    color: white;
+a.chat.cta-button:hover {
+    background-color: black;
 }
-
-
-
 
 // NAVBAR
 
@@ -180,7 +212,27 @@ a.chat:hover {
     font-size: 2.5rem;
 }
 
-// HOME STYLES
+.dropdown-menu li a {
+    color: white !important;
+    text-align: center;
+   }
+
+.dropdown-menu li a:hover {
+ background-color:#13FFCB !important;
+ color: $dark !important;
+ font-weight: 500;
+ 
+}
+
+.active {
+    color: $primary !important;
+}
+
+.dropdown-item.active {
+    color: $dark !important;
+}
+
+// PAGE - HOME STYLES
 #home .banner-container {
     position: relative;
     overflow: hidden;
@@ -295,18 +347,8 @@ a.chat:hover {
     }
 }
 
-// FORM
-.form-control {
-border: 3px solid $primary;
-border-radius: 8px;
-}
+// PAGE - PORTFOLIO STYLING
 
-// FOOTER
-footer {
-background-color: black;    
-}
-
-// PROJECT STYLING
 .project-title {
     color: $primary;
     font-size: 4rem;
@@ -345,7 +387,47 @@ blockquote {
     height: 100px;
 }
 
-// CONTACT STYLING
+#cta {
+    position: relative;
+    background-image: url('../images/leopard-cutout.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50px top;
+}
+
+.cta-content {
+    background-color: rgba(0,0,0,.7);
+}
+
+@media screen and (min-width: 506px) {  
+    #cta {
+        background-position: 50px top;
+    }
+     
+}
+
+@media screen and (min-width: 930px) {
+    #cta {
+        background-position: 50px -200px;
+    }
+
+}
+
+@media screen and (min-width: 1560px) {
+    #cta {
+        background-position: 50px -300px;
+    }
+}
+
+// PAGE - PROJECT STYLING
+
+.bi-arrow-left-circle, .bi-arrow-right-circle {
+    position: fixed;
+    top: 20%;
+    color: $dark;
+}
+
+// PAGE - CONTACT STYLING
 
 #contact .banner-container {
     position: relative;
